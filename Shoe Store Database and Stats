@@ -1,0 +1,23 @@
+--Create a store database
+
+CREATE TABLE shoes (id INTEGER PRIMARY KEY, name TEXT, color TEXT, style TEXT, price INTEGER);
+
+INSERT INTO shoes VALUES 
+(1, "Veronica", "Red", "High_Heel", 49.99),
+(2, "Tennis_Shoe", "White", "Sneaker", 39.99),
+(3, "Saddleup", "Brown", "Boot", 69.99),
+(4, "Mary_Jane", "Black", "Slip_on", 39.99),
+(5, "Flats", "Navy", "Slip_on", 19.99),
+(6, "FMB", "Black", "Boot", 49.99),
+(7, "Sassy", "Black", "High_Heel", 39.99), 
+(8, "Beachy", "Pink", "Slip_on", 10.99),
+(9, "Alegria", "Red", "Slip_on", 79.99),
+(10, "Nike", "Navy", "Sneaker", 69.99),
+(11, "Vans", "Black", "Sneaker", 69.99),
+(12, "Louis", "Black", "High_Heel", 129.99),
+(13, "Going_Out", "Red", "Boot", 79.99),
+(14, "Working", "Brown", "Boot", 69.99),
+(15, "Wedges", "Pink", "High_Heel", 49.99);
+
+--display the database ordered by price
+SELECT * FROM shoes ORDER BY price;
